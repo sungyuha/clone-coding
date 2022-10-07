@@ -7,13 +7,28 @@ const Leftpane = () => {
            <div className="container">
                 <header>Twitter icon here</header>
                 <nav>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/explore">Explore</NavLink>
-                    <NavLink to="/notice">Notice</NavLink>
-                    <NavLink to="/messages">Messages</NavLink>
-                    <NavLink to="/bookmarks">Bookmarks</NavLink>
-                    <NavLink to="/lists">Lists</NavLink>
-                    <NavLink to="/profile">Profile</NavLink>
+                    {/* 카테고리 경로 */}
+                    <NavLink to="/">
+                        <span>Home</span>
+                    </NavLink>
+                    <NavLink to="/explore">
+                        <span>Explore</span>
+                    </NavLink>
+                    <NavLink to="/notice">
+                        <span>Notice</span>
+                    </NavLink>
+                    <NavLink to="/messages">
+                        <span>Messages</span>
+                    </NavLink>
+                    <NavLink to="/bookmarks">
+                        <span>Bookmarks</span>
+                    </NavLink>
+                    <NavLink to="/lists">
+                        <span>Lists</span>
+                    </NavLink>
+                    <NavLink to="/profile">
+                        <span>Profile</span>
+                    </NavLink>
                 </nav>
 
                 <button className="tweet">Tweet</button>
@@ -26,6 +41,7 @@ const Leftpane = () => {
                                 alt="user"
                             />    
                         </div>
+                        {/* 프로필 버튼 */}
                         <div>
                             <div>YuHa Don</div>
                             <div>@yuha profile</div>

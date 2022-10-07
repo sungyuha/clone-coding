@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route  } from 'react-router-dom'
+import { LeftPane } from './components/index';
+import './App.scss'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="App">
+        <LeftPane />
+        <Routes>
+          {/* 메인 카테고리 & 탐색 구성 요소 */}
+          <Route path="/" exact>Home</Route>
+          <Route path="/explore" element>explore</Route>
+          <Route path="/notice" element>Notice</Route>
+          <Route path="/messages" element>Messages</Route>
+          <Route path="/bookmarks" element>Bookmarks</Route>
+          <Route path="/lists" element>Lists</Route>
+          <Route path="/profile" element>Profile</Route>
+        </Routes>
+        <div>Right Pane</div>
+      </div>
+    </BrowserRouter>
+  )
 }
 
 export default App;

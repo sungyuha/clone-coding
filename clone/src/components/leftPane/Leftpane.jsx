@@ -1,33 +1,35 @@
 import { NavLink } from 'react-router-dom';
-import './leftPane.scss'
+import { home, explore, twitter, notifications, messages, bookmarks, lists, profile } from './icons';
+import './leftPane.scss';
+
 
 const Leftpane = () => {
     return (
         <div className="left-pane">
-           <div className="container">
-                <header>Twitter icon here</header>
+            <div className="container">
+                <header>{twitter}</header>
                 <nav>
                     {/* 카테고리 경로 */}
                     <NavLink to="/">
-                        <span>Home</span>
+                        <span>{home} Home</span>
                     </NavLink>
                     <NavLink to="/explore">
-                        <span>Explore</span>
+                        <span>{explore} Explore</span>
                     </NavLink>
                     <NavLink to="/notice">
-                        <span>Notice</span>
+                        <span>{notifications} Notice</span>
                     </NavLink>
                     <NavLink to="/messages">
-                        <span>Messages</span>
+                        <span>{messages} Messages</span>
                     </NavLink>
                     <NavLink to="/bookmarks">
-                        <span>Bookmarks</span>
+                        <span>{bookmarks} Bookmarks</span>
                     </NavLink>
                     <NavLink to="/lists">
-                        <span>Lists</span>
+                        <span>{lists} Lists</span>
                     </NavLink>
                     <NavLink to="/profile">
-                        <span>Profile</span>
+                        <span>{profile} Profile</span>
                     </NavLink>
                 </nav>
 
@@ -48,7 +50,7 @@ const Leftpane = () => {
                         </div>
                     </button>
                 </footer>
-           </div>
+            </div>
         </div>
     )
 }

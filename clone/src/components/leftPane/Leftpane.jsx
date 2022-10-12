@@ -41,12 +41,12 @@ const Leftpane = () => {
                             <img
                                 src="/img/user.png"
                                 alt="user"
-                            />    
+                            />
                         </div>
                         {/* 프로필 버튼 */}
                         <div>
-                            <div>YuHa Don</div>
-                            <div>@yuha profile</div>
+                            <div className="name">YuHa Don</div>
+                            <div className="username">@yuha profile</div>
                         </div>
                     </button>
                 </footer>

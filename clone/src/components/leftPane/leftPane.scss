@@ -5,20 +5,22 @@
 
     .container {
         position: fixed;
-  }
+    }
 
+    // 헤더
     header svg {
       height: 1.9em;
       margin-top: 0.7em;
       margin-bottom: 0.7em;
       margin-left: 4em;
-  }
+    }
 
     nav svg {
       height: 1.3em;
       margin-right: 0.9em;
     }
 
+    // nav
     nav {
       padding-left: 3.3em
     }
@@ -72,6 +74,7 @@
       }
     }
 
+    // 푸터
     footer {
       position: fixed;
       bottom: 1.5em;
@@ -103,8 +106,8 @@
             font-weight: 700;
         }
 
-        .username {
-            color: #8899a6;
+          .username {
+              color: #8899a6;
             }
         }
     }

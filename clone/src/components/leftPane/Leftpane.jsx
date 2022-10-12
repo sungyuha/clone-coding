@@ -10,25 +10,25 @@ const Leftpane = () => {
                 <header>{twitter}</header>
                 <nav>
                     {/* 카테고리 경로 */}
-                    <NavLink to="/">
+                    <NavLink to="/" activeClassName="selected">
                         <span>{home} Home</span>
                     </NavLink>
-                    <NavLink to="/explore">
+                    <NavLink to="/explore" activeClassName="selected">
                         <span>{explore} Explore</span>
                     </NavLink>
-                    <NavLink to="/notice">
+                    <NavLink to="/notice" activeClassName="selected">
                         <span>{notifications} Notice</span>
                     </NavLink>
-                    <NavLink to="/messages">
+                    <NavLink to="/messages" activeClassName="selected">
                         <span>{messages} Messages</span>
                     </NavLink>
-                    <NavLink to="/bookmarks">
+                    <NavLink to="/bookmarks" activeClassName="selected">
                         <span>{bookmarks} Bookmarks</span>
                     </NavLink>
-                    <NavLink to="/lists">
+                    <NavLink to="/lists" activeClassName="selected">
                         <span>{lists} Lists</span>
                     </NavLink>
-                    <NavLink to="/profile">
+                    <NavLink to="/profile" activeClassName="selected">
                         <span>{profile} Profile</span>
                     </NavLink>
                 </nav>

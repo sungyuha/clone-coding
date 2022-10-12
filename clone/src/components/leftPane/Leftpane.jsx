@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { home, explore, twitter, notifications, messages, bookmarks, lists, profile } from './icons';
 import './leftPane.scss';
 
-
 const Leftpane = () => {
     return (
         <div className="left-pane">

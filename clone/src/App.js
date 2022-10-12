@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route  } from 'react-router-dom'
 import { LeftPane } from './components/index';
+import { RightPane } from './components/index';
 import './App.scss';
 import Home from './components/Home/Home';
 import Explore from './components/Explore/Explore';
@@ -26,8 +27,10 @@ const App = () => {
             <Route path="/lists" element={<Lists />}>Lists</Route>
             <Route path="/profile" element={<Profile />}>Profile</Route>
           </Routes>
+            {/* 검색 & Timeline 요소 */}
+            <div className="right" />
+              <RightPane />
         </div>
-        <div className="right-pane">Right Pane</div>
       </div>
     </BrowserRouter>
   )

@@ -1,4 +1,4 @@
-import React from 'react-router-dom';
+import React from 'react-router-dom'
 import './rightpane.scss';
 
 const Rightpane = () => {

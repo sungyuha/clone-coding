@@ -28,8 +28,9 @@ const App = () => {
             <Route path="/profile" element={<Profile />}>Profile</Route>
           </Routes>
             {/* 검색 & Timeline 요소 */}
-            <div className="right" />
+            <div className="right">
               <RightPane />
+            </div>
         </div>
       </div>
     </BrowserRouter>

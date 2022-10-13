@@ -1,0 +1,49 @@
+.right-pane{
+
+    // 커서를 누르면 색상 바뀜
+    :focus-within {
+        display: inline-block;
+        outline: 2px solid #2769c0;
+        box-shadow: inset;
+        visibility: visible
+    }
+
+    // 검색창 박스
+    .container {
+        display: flex;
+        align-items: center;
+        width: 28em;
+        height: 2em;
+        padding: 13px;
+        margin: 13px;
+        background: #202327;
+        border-radius: 40px;
+        color: rgb(113, 118, 123);
+
+        :focus-within {
+            color: #fff;
+        }
+
+        // 검색 아이콘
+        span svg{
+            width: 2em;
+            height: 2em;
+
+            :focus-within {
+                background-color: #2769c0;
+            }
+        }
+
+        // 키워드 입력창
+        input {
+            width: 20em;
+            height: 3em;
+            margin-left: 1rem;
+            color: rgb(113, 118, 123);
+            background: #202327;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+    }
+}

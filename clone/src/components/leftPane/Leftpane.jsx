@@ -44,7 +44,7 @@ const Leftpane = () => {
                         </div>
                         {/* 프로필 버튼 */}
                         <div>
-                            <div className="name">YuHa Don</div>
+                            <div className="name">YuHa Sung</div>
                             <div className="username">@yuha profile</div>
                         </div>
                     </button>

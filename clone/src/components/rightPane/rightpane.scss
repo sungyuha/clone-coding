@@ -29,7 +29,7 @@
             width: 2em;
             height: 2em;
 
-            :focus-within {
+            &:focus-within {
                 background-color: #2769c0;
             }
         }
